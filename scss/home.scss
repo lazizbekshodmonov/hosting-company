@@ -5,16 +5,23 @@ $font-poppins: 'Poppins', sans-serif;
 $font-inter: 'Inter', sans-serif;
 $color-red: #B00000;
 $color-blak: #000000;
+$color-grey: rgba(214, 212, 212, 0.88);
+$color-808080: #808080;
+$color-2E2E2E: #2E2E2E;
 li{
     color: black;
+}
+a{
+    text-decoration: none;
 }
 .all-page{
     .container{
         .navbar{
+            margin-bottom: 80px;
             .container-fluid{
                 .navbar-brand{
                     margin-right: 60px;
-                    width: 90.81px;
+                    // width: 90.81px;
                 }
                 .navbar-toggler{
                     box-shadow: none;
@@ -35,10 +42,14 @@ li{
                                 border-radius: 10px;
                                 bottom: 0;
                                 left: 12.5%;
+                                transition: 0.5s;
                             }
-                            &:hover ::after{
-                                width: 75%;
+                            &:hover {
+                                &::after{
+                                    width: 75%;
+                                }
                             }
+                            
                             .nav-link{
                                 font-family: $font-poppins;
                                 font-style: normal;
@@ -46,8 +57,199 @@ li{
                                 font-size: 15px;
                                 line-height: 25px;
                                 color: $color-blak;
+                                span{
+                                    color: #DAD8D8;
+                                    ;
+                                }
+                                .fal{
+                                   color: $color-red;
+                                   }
+                                }
+                            
+                        }
+                        .after-none{
+                            &::after{
+                                display: none;
                             }
                         }
+                    }
+                }
+            }
+        }
+
+        .our-services{
+            margin-bottom: 79px;
+            .services-info{
+                .cervices-categories{
+                    padding: 0 12px;
+                    padding-bottom: 30px;
+                    position: relative;
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        bottom: 50%;
+                        left: 4%;
+                        width: 49%;
+                        height: 1px;
+                        background-color: $color-grey;
+                    }
+                    .services-item{
+                        display: inline;
+                        list-style-type: none;
+                        font-family: $font-poppins;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 15px;
+                        line-height: 22px;
+                        color: $color-grey;
+                        cursor: pointer;
+                        transition: 0.5s;
+                        &:hover{
+                            color: $color-red;
+                        }
+                    }
+                    
+                    .active{
+                        color: $color-red;
+                        position: relative;
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            bottom: -17%;
+                            z-index: 999;
+                            left: 16%;
+                            width: 55%;
+                            height: 1px;
+                            background-color: #B00000;
+                        }
+                    }
+                    .col-lg-1{
+                        width: 10%;
+                        &::after{
+                            left: 23%;
+                            width: 50%;
+                        }
+                    }
+                    .active-email{
+                        &::after{
+                            left: 15%;
+                            width: 42%;
+                        }
+                    }
+
+                }
+                .even-the-title{
+                    padding: 34px 12px;
+                    padding-top: 0;
+                    font-family: $font-poppins;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 64px;
+                    line-height: 77px;
+                    color: $color-2E2E2E;
+                }
+                .paragraf-inter{
+                    margin-bottom: 60px;
+                    padding: 0 12px;
+                    font-family: $font-inter;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 28px;
+                    letter-spacing: 0.05em;
+                    color: $color-808080;
+                }
+                .cervices-btn{
+                    padding: 0 12px;
+                    .create-account{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 160px;
+                        height: 48px;
+                        margin-right: 24px;
+                        background: #B00000;
+                        box-shadow: 0px 0px 64px rgba(176, 0, 0, 0.3);
+                        border-radius: 8px;
+                        cursor: pointer;
+                        transition: 0.5s;
+                        &:hover{
+                            transform: scale(1.1, 1.1);
+                        }
+                        span{
+                            font-family: $font-poppins;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 14px;
+                            line-height: 24px;
+                            color: #FFFFFF;
+                        }
+                    }
+                    .chose-plan{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 160px;
+                        height: 48px;
+                        left: 296px;
+                        top: 617px;
+                        border: 1px solid #000000;
+                        box-sizing: border-box;
+                        border-radius: 8px;
+                        cursor: pointer;
+                        transition: 0.5s;
+                        &:hover{
+                            transform: scale(1.1, 1.1);
+                            box-shadow: 0px 0px 10px rgba(43, 23, 23, 0.3);
+                        }
+                        span{
+                            font-family: $font-poppins;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 14px;
+                            line-height: 24px;
+                            color: #000000;
+                        }
+                    }
+                }
+            }
+            .services-img{
+                position: relative;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    top: 8%;
+                    right: -2.5%;
+                    width: 40px;
+                    height: 40px;
+                    background: url(../our-services/Elements.png) 50%;
+                }
+                &::before{
+                    content: "";
+                    position: absolute;
+                    z-index: 999;
+                    top: 70%;
+                    left: -2.5%;
+                    width: 40px;
+                    height: 40px;
+                    background: url(../our-services/Elements.png) 50%;
+                    transform: rotate(90deg);
+                }
+                
+                .img-jpg{
+                    width: 100%;
+                   
+                }
+                p{
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        z-index: 999;
+                        bottom: 12%;
+                        right: -3%;
+                        width: 72px;
+                        height: 72px;
+                        background: url(../our-services/Elements.png) 50%;
                     }
                 }
             }
