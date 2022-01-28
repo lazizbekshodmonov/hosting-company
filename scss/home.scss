@@ -8,6 +8,7 @@ $color-blak: #000000;
 $color-grey: rgba(214, 212, 212, 0.88);
 $color-808080: #808080;
 $color-2E2E2E: #2E2E2E;
+$color-18191F: #18191F;
 li{
     color: black;
 }
@@ -88,8 +89,8 @@ a{
                         content: "";
                         position: absolute;
                         bottom: 50%;
-                        left: 4%;
-                        width: 49%;
+                        left: 25px;
+                        width: 46.5%;
                         height: 1px;
                         background-color: $color-grey;
                     }
@@ -104,38 +105,66 @@ a{
                         color: $color-grey;
                         cursor: pointer;
                         transition: 0.5s;
-                        &:hover{
-                            color: $color-red;
-                        }
                     }
-                    
-                    .active{
-                        color: $color-red;
+                    .active-hosting{
                         position: relative;
+                        color: $color-red;
                         &::after{
                             content: "";
                             position: absolute;
                             bottom: -17%;
                             z-index: 999;
-                            left: 16%;
-                            width: 55%;
+                            left: 15px;
+                            width: 49%;
                             height: 1px;
-                            background-color: #B00000;
+                            background-color: $color-red;
                         }
                     }
-                    .col-lg-1{
-                        width: 10%;
+                    .active-domain{
+                        position: relative;
+                        color: $color-red;
                         &::after{
-                            left: 23%;
-                            width: 50%;
+                            content: "";
+                            position: absolute;
+                            bottom: -17%;
+                            z-index: 999;
+                            left: 14px;
+                            width: 51%;
+                            height: 1px;
+                            background-color: $color-red;
+                        }
+                    }
+                    .active-seo{
+                        position: relative;
+                        color: $color-red;
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            bottom: -17%;
+                            z-index: 999;
+                            left: 14px;
+                            width: 45%;
+                            height: 1px;
+                            background-color: $color-red;
                         }
                     }
                     .active-email{
+                        position: relative;
+                        color: $color-red;
                         &::after{
-                            left: 15%;
-                            width: 42%;
+                            content: "";
+                            position: absolute;
+                            bottom: -17%;
+                            z-index: 999;
+                            left: 14px;
+                            width: 36%;
+                            height: 1px;
+                            background-color: $color-red;
                         }
                     }
+                    
+                    
+                    
 
                 }
                 .even-the-title{
@@ -150,6 +179,7 @@ a{
                 }
                 .paragraf-inter{
                     margin-bottom: 60px;
+                    margin-right: 10rem;
                     padding: 0 12px;
                     font-family: $font-inter;
                     font-style: normal;
@@ -229,7 +259,7 @@ a{
                     position: absolute;
                     z-index: 999;
                     top: 70%;
-                    left: -2.5%;
+                    left: 7.5%;
                     width: 40px;
                     height: 40px;
                     background: url(../our-services/Elements.png) 50%;
@@ -237,7 +267,8 @@ a{
                 }
                 
                 .img-jpg{
-                    width: 100%;
+                    width: 90%;
+                    margin-left: 4rem;
                    
                 }
                 p{
@@ -254,5 +285,64 @@ a{
                 }
             }
         }
+
+        .hosting-info{
+            position: relative;
+            .info-text{
+                .title{
+                    font-family: $font-inter;
+                    font-weight: 800;
+                    line-height: 64px;
+                    color: $color-18191F;
+                }
+                .paragraf-inter{
+                    margin-right: 3rem;
+                    font-family: $font-poppins;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 32px;
+                    color: $color-18191F;
+                }
+
+            }
+            .hosting-partner{
+                position: absolute;
+                top: 1rem;
+                right: -14rem;
+                .partner-item{
+                    padding: 0 2rem 1.5rem 0;
+                    .partner-logo{
+                        width: 10.5rem;
+                    }
+                    
+                }
+            }
+            .partner-item:nth-child(1){
+                .partner-logo{
+                    width: 10rem;
+                    margin-top: 0.5rem;
+                }
+            }
+            .partner-item:nth-child(4){
+                .partner-logo{
+                    width: 13rem;
+                    // margin-top: 1rem;
+                }
+            }
+            .partner-item:nth-child(5){
+                .partner-logo{
+                    width: 14rem;
+                    margin-top: 0.5rem;
+                }
+            }
+            .partner-item:nth-child(6){
+                .partner-logo{
+                    // margin-top: 1rem;
+                    width: 11rem;
+                }
+            }
+    
+        }
+        
     }
 }
