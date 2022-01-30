@@ -288,7 +288,10 @@ a{
 
         .hosting-info{
             position: relative;
+            height: 400px;
             .info-text{
+                position: absolute;
+                left: -3%;
                 .title{
                     font-family: $font-inter;
                     font-weight: 800;
@@ -308,7 +311,7 @@ a{
             .hosting-partner{
                 position: absolute;
                 top: 1rem;
-                right: -14rem;
+                right: -7rem;
                 .partner-item{
                     padding: 0 2rem 1.5rem 0;
                     .partner-logo{
@@ -344,5 +347,105 @@ a{
     
         }
         
+        .advantages{
+            margin-bottom: 133px;
+            .advantages-item{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                .advantages-logo{
+                    width: 100px;
+                    margin-bottom: 12px;
+                }
+                .advantages-name{
+                    font-family: $font-poppins;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 20px;
+                    line-height: 30px;
+                    color: $color-blak;
+                    margin-bottom: 4px;
+                    text-align: center;
+                }
+                .advantages-info{
+                    font-family: $font-poppins;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 12px;
+                    line-height: 18px;
+                    text-align: center;
+                    color: $color-blak;
+                }
+            }
+        }
+        .prices{
+            .title{
+                padding: 0 20%;
+                font-family: $font-poppins;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 50px;
+                line-height: 60px;
+                text-align: center;
+                color: $color-blak;
+                margin-bottom: 38px;
+            }
+            .sub-title{
+                font-family: $font-poppins;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 25px;
+                line-height: 25px;
+                text-align: center;
+                color: $color-blak;
+                margin-bottom: 57px;
+            }
+            .prices-discount{
+                justify-content: center;
+                margin-left: 5rem;
+                .discount-monthly, .discount-yearly{
+                    font-family: $font-poppins;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 25px;
+                    line-height: 25px;
+                    text-align: center;
+                    color: $color-blak;
+                }
+                .discount-amount{
+                    margin-left: 17px;
+                    width: 100px;
+                    height: 24px;
+                    background: #FFE87A;
+                    border-radius: 8px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    span{
+                        font-family: $font-poppins;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 10px;
+                        line-height: 9px;
+                        text-align: center;
+                        color: $color-blak;
+                    }
+                }
+                .discount-selection{
+                    
+                    
+                    .form-switch{
+                        margin-bottom: 1rem;
+                    background: #B00000;
+                        .form-check-input{
+                            width: 93px;
+                            height: 50px;
+                            border-radius: 73px;
+                            margin-left: -4.2rem;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
