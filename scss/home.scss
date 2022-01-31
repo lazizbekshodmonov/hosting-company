@@ -204,7 +204,7 @@ a{
                         cursor: pointer;
                         transition: 0.5s;
                         &:hover{
-                            transform: scale(1.1, 1.1);
+                            transform: scale(1.05, 1.05);
                         }
                         span{
                             font-family: $font-poppins;
@@ -229,7 +229,7 @@ a{
                         cursor: pointer;
                         transition: 0.5s;
                         &:hover{
-                            transform: scale(1.1, 1.1);
+                            transform: scale(1.05, 1.05);
                             box-shadow: 0px 0px 10px rgba(43, 23, 23, 0.3);
                         }
                         span{
@@ -379,7 +379,7 @@ a{
             }
         }
         .prices{
-            margin-bottom: 100px;
+            margin-bottom: 80px;
             .title{
                 padding: 0 20%;
                 font-family: $font-poppins;
@@ -404,7 +404,9 @@ a{
             .prices-discount{
                 justify-content: center;
                 margin-left: 5rem;
+                margin-bottom: 70px;
                 .discount-monthly, .discount-yearly{
+                    width: 130px;
                     font-family: $font-poppins;
                     font-style: normal;
                     font-weight: normal;
@@ -413,7 +415,8 @@ a{
                     text-align: center;
                     color: $color-blak;
                     margin: 0;
-                    padding: 15px;
+                    padding: 15px 0;
+                    padding-right: 10px;
                 }
                 .discount-amount{
                     margin-left: 17px;
@@ -473,6 +476,140 @@ a{
 
                    
 
+                }
+            }
+            .prices-type{
+                justify-content: center;
+                position: relative;
+                margin-bottom: 80px;
+                &::after{
+                    position: absolute;
+                    bottom: -6px;
+                    content: "";
+                    width: 50%;
+                    height: 4px;
+                    background: #C4C4C4;
+                    border-radius: 2px;
+                }
+                .prices-type-item{
+                    display: flex;
+                    justify-content: center;
+                    position: relative;
+                    
+                    p{
+                        font-family: $font-poppins;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 30px;
+                        line-height: 40px;
+                        color: #000000;
+                        margin: 0;
+                    };
+                }
+                .prices-type-item:nth-child(1){
+                    &::after{
+                        position: absolute;
+                        content: "";
+                        width: 100%;
+                        height: 4px;
+                        bottom: -6px;
+                        z-index: 999;
+                        border-radius: 2px;
+                        background-color:  $color-red;
+                    }
+                }
+            }
+            .prices-categories{
+                justify-content: space-evenly;
+                
+                .prices-categories-item{
+                    padding: 34px;
+                    background: #FFFFFF;
+                    border: 1.5px solid #C4C4C4;
+                    box-sizing: border-box;
+                    box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+                    border-radius: 15px;
+                    cursor: pointer;
+                    transition: 1s;
+                    
+                    .categories-item-name{
+                        margin-bottom: 11px;
+                        font-family: $font-poppins;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 28px;
+                        line-height: 25px;
+                        color: $color-blak;
+                    }
+                    .categories-item-info{
+                        margin-right: 10px;
+                        margin-bottom: 28px;
+                        font-family: $font-poppins;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 12px;
+                        line-height: 18px;
+                        color: $color-blak;
+                    }
+                    .categories-item-cost{
+                        margin-bottom: 11px;
+                        font-family: $font-poppins;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 42px;
+                        line-height: 32px;
+                        color: $color-blak;
+                    }
+                    .categories-item-time{
+                        margin-bottom: 35px;
+                        font-family: $font-poppins;
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 14px;
+                        line-height: 14px;
+                        color: $color-blak;
+                    }
+                    .categories-item-btn{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+                        height: 50px;
+                        background: #FFFFFF;
+                        border: 2px solid #000000;
+                        box-sizing: border-box;
+                        border-radius: 12px;
+                        margin-bottom: 35px;
+                        span{
+                            font-family: $font-poppins;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 32px;
+                            color: $color-blak;
+                        }
+                    }
+                    .prices-definition{
+                        padding: 0;
+                        .definition-item{
+                            list-style-type: none;
+                            margin-bottom: 15px;
+                            font-family: $font-inter;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 24px;
+                            color: $color-808080;
+                            .fas{
+                                margin-right: 27px;
+                                color: $color-blak;
+                            }
+                        }
+                    }
+                    &:hover{
+                        transform: scale(1.03, 1.03);
+                        transition: 0.5s;
+                    }
                 }
             }
         }
