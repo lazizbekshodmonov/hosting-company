@@ -523,7 +523,7 @@ a{
             //---------------------------------------------------------------
             .prices-categories{
                 justify-content: space-evenly;
-                
+                margin-bottom: 160px;
                 .prices-categories-item{
                     padding: 34px;
                     background: #FFFFFF;
@@ -671,16 +671,26 @@ a{
                 }
             }
         }
+        //===============================================================
         .customers-stories{
+            margin-bottom: 100px;
             padding: 0 150px;
+            justify-content: center;
+            position: relative;
             .customers-stories-info{
                 position: relative;
                 &::after{
                     position: absolute;
+                    top: -60px;
+                    left: -90px;
+                    z-index: -1;
                     content: "";
-                    width: 100px;
-                    height: 100px;
-                    background: url(../stories/icon.svg) 70%;
+                    width: 150px;
+                    height: 150px;
+                    background-image: url(../stories/icon.svg);
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                    opacity: 0.3;
                 }
                 .title{
                     font-family: $font-inter;
@@ -689,6 +699,100 @@ a{
                     font-size: 48px;
                     line-height: 64px;
                     color: #18191F;
+                }
+                .paragraph{
+                    font-family: $font-inter;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 32px;
+                    color: $color-18191F;
+                }
+                
+            }
+            .stories-item{
+                background: #FFFFFF;
+                box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+                border-radius: 8px;
+                padding: 0 40px;
+                padding-top: 39px;
+                margin: 32px 30px;
+                .user-logo{
+                    // width: 80px;
+                    margin-bottom: 15px;
+                }
+
+                .user-comment{
+                    font-family: $font-inter;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 32px;
+                    color: $color-blak;
+                    margin-bottom: 24px;
+                }
+                .user-name{
+                    font-family: $font-inter;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 28px;
+                    color: $color-blak;
+                }
+                .user-job{
+                    font-family: Inter;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: #969BAB;
+                }
+
+            }
+            // .position-abs{
+            //     // position: absolute;
+            // }
+            .stories-item-big{
+                height: 460px;
+                margin-left: 100px;
+            }
+            .stories-item-average{
+                padding-bottom: 14px;
+            }
+            .stories-item-small{
+                padding-bottom: 32px;
+            }
+
+        }
+        .service-sites{
+            position: relative;
+            .service-sites-item{
+                padding-top: 30px;
+                .title{
+                    font-family: $font-inter;
+                    font-style: normal;
+                    font-weight: 800;
+                    font-size: 48px;
+                    line-height: 64px;
+                    color: $color-blak;
+                    margin-bottom: 8px;
+                }
+                .paragraph{
+                    font-family: $font-inter;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 32px;
+                    color: $color-blak;
+                    padding-right: 60px;
+                }
+            }
+            .sites-logo{
+                position: absolute;
+                right: 0;
+                justify-content: space-between;
+                img{
+                    width: 180px;
                 }
             }
         }
