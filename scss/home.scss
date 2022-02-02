@@ -718,6 +718,10 @@ a{
                 padding-top: 39px;
                 margin: 32px 30px;
                 cursor: pointer;
+                transition: 0.5s;
+                &:hover{
+                    transform: scale(1.03, 1.03);
+                }
                 .user-logo{
                     // width: 80px;
                     margin-bottom: 15px;
