@@ -917,4 +917,62 @@ a{
             }
         }
     }
+    .footer{
+        padding: 64px 0;
+        background: #B00000;
+        .container{
+            margin: 0 auto;
+            .footer-info{
+                .logo{
+                    margin-bottom: 16px;
+                    cursor: pointer;
+                }
+                .company-info{
+                    font-family: $font-inter;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 32px;
+                    color: #E6E6E6;
+                    padding-right: 40px;
+                    line-height: 34px;
+                }
+            }
+            .footer-item{
+                margin-top: 30px;
+                .categories-name{
+                    font-family: $font-inter;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #FFFFFF;
+                    margin-bottom: 24px;
+                }
+                .categories{
+                    padding: 0;
+                    .categories-item{
+                        font-family: $font-inter;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 32px;
+                        color: #E6E6E6;
+                        margin-bottom: 24px;
+                        list-style-type: none;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .copyright{
+                font-family: $font-inter;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 32px;
+                color: #FFFFFF;
+                margin-top: 96px;
+            }
+        }
+    }
 }
