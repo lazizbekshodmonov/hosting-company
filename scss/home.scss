@@ -811,6 +811,7 @@ a{
         }
         .service-sites{
             position: relative;
+            margin-bottom: 125px;
             .service-sites-item{
                 padding-top: 30px;
                 .title{
@@ -842,6 +843,7 @@ a{
             }
         }
         .offer{
+            position: relative;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -860,7 +862,6 @@ a{
                 color: $color-2E2E2E;
             }
             .get{
-                position: relative;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -881,12 +882,38 @@ a{
                     font-size: 21px;
                 }
                 &:hover{
-                    transform: scale(1.03, 1.03);
+                    transform: scale(1.04, 1.04);
                 }
-                img{
-                    position: absolute;
-                    
-                }
+                
+            }
+            img{
+                position: absolute;
+                right: -25px;
+                bottom: 35px;
+                width: 72px;
+            }
+            &::after{
+                position: absolute;
+                content: "";
+                width: 35px;
+                height: 35px;
+                background-image: url(../offer/Elements.svg);
+                background-size: 100%;
+                background-repeat: no-repeat;
+                transform: rotate(90deg);
+                left: -15px;
+                bottom: 80px;
+            }
+            &::before{
+                position: absolute;
+                content: "";
+                width: 35px;
+                height: 35px;
+                background-image: url(../offer/Elements.svg);
+                background-size: 100%;
+                background-repeat: no-repeat;
+                top: 0;
+                left: 370px;
             }
         }
     }
